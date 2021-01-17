@@ -75,6 +75,7 @@ public class RSAEncryptFunctions {
         String pubKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIdQMkoYhNj18xHuNqjoek+ZPztonY5F2Tw5QKmfM6oQawh81ut6ZpVgGqKK9HV7CKFx+AsjjalvcHkrQuzusmx2sHtjv6LPmpVZM60qgQ00rz5+uPtVe5E51Pz8CxBOdN296yfeNdcjsdw8sNPlVtVv97gXHCVVbf0mdskk1GxwIDAQAB";
         String text = "china no.1";
         String enText = rsaPublicKeyEncrypt(Slices.utf8Slice(text), Slices.utf8Slice(pubKey)).toStringUtf8();
+        System.out.println(enText);
         String deText = rsaPrivateKeyDecrypt(Slices.utf8Slice(enText), Slices.utf8Slice(priKey)).toStringUtf8();
         System.out.println(deText);
         System.out.println(text.equals(deText));

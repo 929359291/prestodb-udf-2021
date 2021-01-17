@@ -35,7 +35,7 @@
       <groupId>io.airlift</groupId>
       <artifactId>slice</artifactId>
       <version>${slice.version}</version>
-      <scope>provided</scope>
+<!--      <scope>provided</scope>-->
     </dependency>
 
     <dependency>
